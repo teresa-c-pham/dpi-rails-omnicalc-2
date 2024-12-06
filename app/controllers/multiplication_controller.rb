@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Controller for Multiplication forms and templates
 class MultiplicationController < ApplicationController
   def show_multiplication_form
     render({ :template => "multiplication_templates/multiplication_form" })

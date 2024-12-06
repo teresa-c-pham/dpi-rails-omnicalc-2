@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Controller for Addition forms and templates
 class AdditionController < ApplicationController
   def show_addition_form
@@ -10,7 +11,6 @@ class AdditionController < ApplicationController
     @second_num = params.fetch('second_num').to_f
 
     @result = @first_num + @second_num
-
 
     render({ template: 'addition_templates/add_results' })
   end
